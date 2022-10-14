@@ -19,6 +19,7 @@ grid(j);
 var cells = document.querySelectorAll('.cell');
 cells.forEach((cell) => {
     cell.addEventListener('mouseover', () => {
-        console.log('e');
+        cell.style.backgroundColor = 'yellow';
     });
 });
+
