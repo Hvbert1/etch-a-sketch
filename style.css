@@ -1,0 +1,21 @@
+#container {
+    display: grid;
+    background: pink;
+    padding: 50px;
+}
+
+.row {
+    display: flex;
+    background: green;
+    outline: solid;
+    justify-content: center;
+}
+
+.cell {
+    display: flex;
+    background: orange;
+    outline: solid;
+    justify-content: center;
+    flex: 1;
+    padding: 10px;
+}

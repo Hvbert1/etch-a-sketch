@@ -12,5 +12,3 @@ function grid(j) {
         }
     }
 }
-
-grid(16);
