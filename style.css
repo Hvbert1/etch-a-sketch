@@ -1,12 +1,10 @@
 #container {
     display: grid;
     background: pink;
-    padding: 50px;
 }
 
 .row {
     display: flex;
-    background: green;
     outline: solid;
     justify-content: center;
 }
@@ -17,5 +15,10 @@
     outline: solid;
     justify-content: center;
     flex: 1;
-    padding: 10px;
+    width: 50%;
+    padding-top: 50%;
+}
+
+.cell:hover {
+    background-color: black;
 }
