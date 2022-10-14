@@ -1,5 +1,7 @@
 const container = document.querySelector('#container');
 
+var j = 3;
+
 function grid(j) {
     for(let i = 0; i < j; i++) {
         var row = document.createElement('div');
@@ -12,3 +14,11 @@ function grid(j) {
         }
     }
 }
+grid(j);
+
+var cells = document.querySelectorAll('.cell');
+cells.forEach((cell) => {
+    cell.addEventListener('mouseover', () => {
+        console.log('e');
+    });
+});
