@@ -15,11 +15,21 @@ function grid(j) {
     }
 }
 grid(j);
+change();
 
-var cells = document.querySelectorAll('.cell');
-cells.forEach((cell) => {
-    cell.addEventListener('mouseover', () => {
+function change() {
+    var cells = document.querySelectorAll('.cell');
+    cells.forEach((cell) => {
+        cell.addEventListener('mouseover', () => {
         cell.style.backgroundColor = 'yellow';
     });
 });
+}
+
+function btn() {
+    let size = window.prompt("Enter grid number");
+    j = size;
+    grid(j)
+    change();
+}
 
