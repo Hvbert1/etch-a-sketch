@@ -29,6 +29,7 @@ function change() {
 function btn() {
     let size = window.prompt("Enter grid number");
     j = size;
+    container.innerHTML = '';
     grid(j)
     change();
 }
