@@ -38,5 +38,15 @@ function reset() {
     change();
 }
 
+function btnrgb() {
+    var cells = document.querySelectorAll('.cell');
+    cells.forEach((cell) => {
+        cell.addEventListener('mouseover', () => {
+        var randomColour = Math.floor(Math.random()*16777215).toString(16);
+        cell.style.backgroundColor = '#' + randomColour;
+    });
+});
+}
+
 grid(j);
 change();
