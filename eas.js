@@ -14,6 +14,7 @@ function grid(j) {
         }
     }
 }
+
 grid(j);
 change();
 
@@ -28,9 +29,16 @@ function change() {
 
 function btn() {
     let size = window.prompt("Enter grid number");
-    j = size;
+    if(size <= 100) {
+        j = size;
+        reset();
+    }
+    else alert("Cannot exceed 100 pixels");
+}
+
+function reset() {
     container.innerHTML = '';
-    grid(j)
+    grid(j);
     change();
 }
 
