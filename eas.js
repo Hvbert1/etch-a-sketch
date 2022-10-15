@@ -1,5 +1,4 @@
 const container = document.querySelector('#container');
-
 var j = 3;
 
 function grid(j) {
@@ -15,9 +14,6 @@ function grid(j) {
     }
 }
 
-grid(j);
-change();
-
 function change() {
     var cells = document.querySelectorAll('.cell');
     cells.forEach((cell) => {
@@ -29,11 +25,11 @@ function change() {
 
 function btn() {
     let size = window.prompt("Enter grid number");
-    if(size <= 100) {
+    if(size <= 100 && size > 0) {
         j = size;
         reset();
     }
-    else alert("Cannot exceed 100 pixels");
+    else alert("size > 0 and < 100");
 }
 
 function reset() {
@@ -42,3 +38,5 @@ function reset() {
     change();
 }
 
+grid(j);
+change();
