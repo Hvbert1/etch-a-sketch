@@ -1,6 +1,6 @@
 #container {
     display: grid;
-    background: pink;
+    background: grey;
     width: 500px;
     height: 500px;
 }
@@ -17,4 +17,17 @@
     outline: solid;
     justify-content: center;
     flex: 1;
+}
+
+button {
+    border: none;
+    padding: 15px 32px;
+    background-color: aquamarine;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
