@@ -1,5 +1,5 @@
 const container = document.querySelector('#container');
-var j = 3;
+var j = 16;
 
 function grid(j) {
     for(let i = 0; i < j; i++) {
