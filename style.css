@@ -3,11 +3,11 @@
     background: grey;
     width: 500px;
     height: 500px;
+    outline: solid;
 }
 
 .row {
     display: flex;
-    outline: solid;
     justify-content: center;
 }
 
@@ -15,6 +15,7 @@
     display: flex;
     background: orange;
     outline: solid;
+    outline-width: thin;
     justify-content: center;
     flex: 1;
 }
@@ -22,7 +23,9 @@
 button {
     border: none;
     padding: 15px 32px;
-    background-color: aquamarine;
+    background-color: orangered;
+    border-radius: 5px;
+
 }
 
 body {
