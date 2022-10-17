@@ -1,6 +1,9 @@
 const container = document.querySelector('#container');
 var j = 16;
 
+const blueButton = document.querySelector("#blue");
+const rainbowButton = document.querySelector("#rainbow");
+
 function grid(j) {
     for(let i = 0; i < j; i++) {
         var row = document.createElement('div');
@@ -15,6 +18,8 @@ function grid(j) {
 }
 
 function change() {
+    blueButton.style.backgroundColor = "#888";
+    rainbowButton.style.backgroundColor = null;
     var cells = document.querySelectorAll('.cell');
     cells.forEach((cell) => {
         cell.addEventListener('mouseover', () => {
@@ -39,6 +44,8 @@ function reset() {
 }
 
 function btnrgb() {
+    blueButton.style.backgroundColor = null;
+    rainbowButton.style.backgroundColor = "#888";
     var cells = document.querySelectorAll('.cell');
     cells.forEach((cell) => {
         cell.addEventListener('mouseover', () => {
